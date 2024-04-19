@@ -69,39 +69,74 @@
           </div>
         </div>
 
-          <!-- Sidebar end -->
+        <!-- Sidebar end -->
 
         <div class="direita">
           <div class="conteudo-direita">
-          
-            <!-- Step 1 start -->
+
+           
 
             <div class="step1">
-              <div class="step1-conteudo">
-                <div class="parte1">
+              <div class="step-conteudo">
+
+                 <!-- Step 1 start -->
+                <div id="step1-header" class="parte1 sumir-display">
                   <h1>Personal info</h1>
                   <p>Please provide your name, email address, and phone number.</p>
                 </div>
-  
-                <div class="parte2" >
+
+                <div id="step1-content" class="parte2 sumir-display">
                   <form class="form1" action="">
                     <label for="">Name</label>
                     <input type="text" placeholder="e.g. Stephen King">
-  
+
                     <label for="">Email Address</label>
                     <input type="text" placeholder="e.g. stephenking@lorem.com">
-  
+
                     <label for="">Phone Number</label>
                     <input type="text" placeholder="e.g. +1 234 567 890">
-  
+
                   </form>
                 </div>
-  
-                <div class="parte3">
-                    <button type="button">Next Step</button>
+                 <!-- Step 1 end -->
+
+                  <!-- Step 2 start -->
+                <div id="step2-header" class="parte1">
+                  <h1>Select your plan</h1>
+                  <p> You have the option of monthly or yearly billing.</p>
                 </div>
-  
-              </div>              
+
+                <div id="step2-content" class="parte2">
+                    <div class="caixa-opcoes">
+                        <div id="step2-plano1" class="opcoes-caixa">
+                          <div class="planos">
+                              <div class="tipo">Arcade</div>
+                              <div class="preco">$9/mo</div>
+                          </div>
+                        </div>
+                        <div id="step2-plano2" class="opcoes-caixa">
+                          <div class="planos">
+                            <div class="tipo"> Advanced</div>
+                            <div class="preco">$12/mo</div>
+                        </div>
+                        </div>
+                        <div id="step2-plano3" class="opcoes-caixa">
+                          <div class="planos">
+                            <div class="tipo">Pro</div>
+                            <div class="preco">$15/mo</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 2 end -->
+                
+
+                <div class="parte3">
+                  <button id="go-back" type="button">Go Back</button>
+                  <button type="button">Next Step</button>
+                </div>
+
+              </div>
             </div>
 
             <!-- Step 1 end -->
@@ -110,17 +145,12 @@
             <div style="display: none;">
               <!-- Step 2 start -->
 
-              Select your plan
-              You have the option of monthly or yearly billing.
 
-              Arcade
-              $9/mo
+             
+              
 
-              Advanced
-              $12/mo
-
-              Pro
-              $15/mo
+              
+              
 
               Monthly
               Yearly

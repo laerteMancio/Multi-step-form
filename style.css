@@ -212,7 +212,7 @@ span{
 
 }
 
-.step1-conteudo{
+.step-conteudo{
     display: flex;
     flex-direction: column;  
     justify-content: space-around;
@@ -260,6 +260,7 @@ p{
     align-items: center;
 
     width: 100%;
+    height: 45%;
     
 
 }
@@ -287,10 +288,12 @@ input::placeholder{
 .parte3{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     
     width: 100%;
+
+    
 
     
     
@@ -313,8 +316,88 @@ input::placeholder{
 button{
     background-color: hsl(213, 96%, 18%);
     color:hsl(229, 24%, 87%);
-    height: 35px;
-    width: 80px;
+    height: 40px;
+    width: 95px;
     border-radius: 5px;
     
+}
+
+#go-back {
+    background-color: white !important;
+    border: none;
+    color: hsl(231, 11%, 63%);
+    font-weight: 700;
+    text-align: left;
+}
+
+.caixa-opcoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+}
+
+.opcoes-caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    
+    width: 31%;
+    height: 150px;
+
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+
+
+}
+
+.planos{
+    display: flex;
+    flex-direction: column;     
+    align-items: start;
+    margin-bottom: 12px;
+    margin-left: 12px;
+
+    
+}
+
+#step2-plano1{
+    background-image: url('./assets/images/icon-arcade.svg');
+    background-repeat: no-repeat;
+    background-position:top  left;
+    background-position-x: 12px;
+    background-position-y: 12px;
+}
+
+#step2-plano2{
+    background-image: url('./assets/images/icon-advanced.svg');
+    background-repeat: no-repeat;
+    background-position:top  left;
+    background-position-x: 12px;
+    background-position-y: 12px;
+}
+
+#step2-plano3{
+    background-image: url('./assets/images/icon-pro.svg');
+    background-repeat: no-repeat;
+    background-position:top  left;
+    background-position-x: 12px;
+    background-position-y: 12px;
+}
+
+.tipo{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.preco{
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+}
+.sumir-display{
+    display: none;
 }
