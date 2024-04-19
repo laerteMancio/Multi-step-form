@@ -100,15 +100,7 @@ p{
     
 }
 
-.conteudo-direita{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
 
-    width: 80%;
-    height: 90%;
-}
 
 .caixas-esq{
     display: flex;
@@ -181,4 +173,148 @@ p{
 span{    
     
     font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.conteudo-direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    height: 95%;
+
+    
+
+    
+}
+
+
+.step1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 100%;
+    height: 100%;
+
+    
+
+
+}
+
+.step1-conteudo{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    
+
+    width: 75%;
+    height: 100%;
+
+
+}
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    width: 100%;
+
+    
+    gap: 10px;
+
+    
+
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color:  hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+}
+
+
+.parte2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    
+
+}
+
+.parte2 input{
+    width: 96%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid hsl(229, 24%, 87%);
+}
+
+.parte2 label{
+    color: hsl(231, 11%, 63%);
+    font-weight: 700;
+}
+
+input{
+    padding-left: 10px;
+}
+
+input::placeholder{
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+}
+.parte3{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    
+    width: 100%;
+
+    
+    
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    width: 100%;
+    height: auto;
+
+    gap: 10px;
+
+    
+}
+
+button{
+    background-color: hsl(213, 96%, 18%);
+    color:hsl(229, 24%, 87%);
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    
 }
