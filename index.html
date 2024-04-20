@@ -111,21 +111,32 @@
                         <div id="step2-plano1" class="opcoes-caixa">
                           <div class="planos">
                               <div class="tipo">Arcade</div>
-                              <div class="preco">$9/mo</div>
+                              <div id="preco-arcade" class="preco">$9/mo</div>
+                              <div id="desconto-arcade" class="desconto sumir-display"><p>2 months free</p></div>                              
                           </div>
                         </div>
                         <div id="step2-plano2" class="opcoes-caixa">
                           <div class="planos">
                             <div class="tipo"> Advanced</div>
-                            <div class="preco">$12/mo</div>
+                            <div id="preco-advanced" class="preco">$12/mo</div>
+                            <div id="desconto-advanced" class="desconto sumir-display"><p>2 months free</p></div>
                         </div>
                         </div>
                         <div id="step2-plano3" class="opcoes-caixa">
                           <div class="planos">
-                            <div class="tipo">Pro</div>
-                            <div class="preco">$15/mo</div>
+                            <div class="tipo">Pro</div> 
+                            <div  id="preco-pro" class="preco">$15/mo</div>
+                            <div id="desconto-pro" class="desconto sumir-display"><p>2 months free</p></div>
                         </div>
                         </div>
+                        
+                    </div>
+                    <div class="periodo-plano">
+                      <label class="label-monthly" for="">Monthly</label>
+                      <div id="controle-slider" class="caixa-switch">                                                 
+                          <span onclick="acionarCheckbox()"  class="slider"></span>                                                
+                      </div>                      
+                      <label class="label-yearly" for="">Yearly</label>  
                     </div>
                 </div>
                  <!-- Step 2 end -->
@@ -152,11 +163,9 @@
               
               
 
-              Monthly
-              Yearly
+              
+              
 
-              Go Back
-              Next Step
 
               <!-- Step 2 end -->
 
