@@ -74,12 +74,12 @@
         <div class="direita">
           <div class="conteudo-direita">
 
-           
+
 
             <div class="step1">
               <div class="step-conteudo">
 
-                 <!-- Step 1 start -->
+                <!-- Step 1 start -->
                 <div id="step1-header" class="parte1 sumir-display">
                   <h1>Personal info</h1>
                   <p>Please provide your name, email address, and phone number.</p>
@@ -98,93 +98,149 @@
 
                   </form>
                 </div>
-                 <!-- Step 1 end -->
+                <!-- Step 1 end -->
 
-                  <!-- Step 2 start -->
-                <div id="step2-header" class="parte1">
+                <!-- Step 2 start -->
+
+                <div id="step2-header" class="parte1 sumir-display">
                   <h1>Select your plan</h1>
                   <p> You have the option of monthly or yearly billing.</p>
                 </div>
 
-                <div id="step2-content" class="parte2">
-                    <div class="caixa-opcoes">
-                        <div id="step2-plano1" class="opcoes-caixa">
-                          <div class="planos">
-                              <div class="tipo">Arcade</div>
-                              <div id="preco-arcade" class="preco">$9/mo</div>
-                              <div id="desconto-arcade" class="desconto sumir-display"><p>2 months free</p></div>                              
-                          </div>
+                <div id="step2-content" class="parte2 sumir-display">
+                  <div class="caixa-opcoes">
+                    <div id="step2-plano1" class="opcoes-caixa">
+                      <div class="planos">
+                        <div class="tipo">Arcade</div>
+                        <div id="preco-arcade" class="preco">$9/mo</div>
+                        <div id="desconto-arcade" class="desconto sumir-display">
+                          <p>2 months free</p>
                         </div>
-                        <div id="step2-plano2" class="opcoes-caixa">
-                          <div class="planos">
-                            <div class="tipo"> Advanced</div>
-                            <div id="preco-advanced" class="preco">$12/mo</div>
-                            <div id="desconto-advanced" class="desconto sumir-display"><p>2 months free</p></div>
-                        </div>
-                        </div>
-                        <div id="step2-plano3" class="opcoes-caixa">
-                          <div class="planos">
-                            <div class="tipo">Pro</div> 
-                            <div  id="preco-pro" class="preco">$15/mo</div>
-                            <div id="desconto-pro" class="desconto sumir-display"><p>2 months free</p></div>
-                        </div>
-                        </div>
-                        
+                      </div>
                     </div>
-                    <div class="periodo-plano">
-                      <label class="label-monthly" for="">Monthly</label>
-                      <div id="controle-slider" class="caixa-switch">                                                 
-                          <span onclick="acionarCheckbox()"  class="slider"></span>                                                
-                      </div>                      
-                      <label class="label-yearly" for="">Yearly</label>  
+                    <div id="step2-plano2" class="opcoes-caixa">
+                      <div class="planos">
+                        <div class="tipo"> Advanced</div>
+                        <div id="preco-advanced" class="preco">$12/mo</div>
+                        <div id="desconto-advanced" class="desconto sumir-display">
+                          <p>2 months free</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                 <!-- Step 2 end -->
-                
+                    <div id="step2-plano3" class="opcoes-caixa">
+                      <div class="planos">
+                        <div class="tipo">Pro</div>
+                        <div id="preco-pro" class="preco">$15/mo</div>
+                        <div id="desconto-pro" class="desconto sumir-display">
+                          <p>2 months free</p>
+                        </div>
+                      </div>
+                    </div>
 
-                <div class="parte3">
-                  <button id="go-back" type="button">Go Back</button>
-                  <button type="button">Next Step</button>
+                  </div>
+                  <div class="periodo-plano">
+                    <label class="label-monthly" for="">Monthly</label>
+                    <div id="controle-slider" class="caixa-switch">
+                      <span onclick="acionarCheckbox()" class="slider"></span>
+                    </div>
+                    <label class="label-yearly" for="">Yearly</label>
+                  </div>
                 </div>
 
+                <!-- Step 2 end -->
+
+
+                <div id="step1-header" class="parte1">
+                  <h1> Pick add-ons</h1>
+                  <p>Add-ons help enhance your gaming experience.</p>
+                </div>
+
+                <div id="step1-content" class="parte2">
+
+                  <div class="container-step-3">
+                    <div class="conteudo-step-3">
+
+                      <div class="conteudo-step-3-meio">
+                        <div>
+                          <input onchange="checkBoxStep3()" class="checkbox-addons" type="checkbox">
+                        </div>
+                        <div>
+                          <label for="">Online service</label>
+                          <p>Access to multiplayer games</p>
+                        </div>
+                      </div>
+                      <span id="preco-step3-online" class="preco">+$1/mo</span>
+                    </div>
+
+                    <div class="conteudo-step-3">
+
+                      <div class="conteudo-step-3-meio">
+                        <div>
+                          <input onchange="checkBoxStep3()" class="checkbox-addons" type="checkbox">
+                        </div>
+                        <div>
+                          <label for="">Larger storage</label>
+                          <p>Extra 1TB of cloud save</p>
+                        </div>
+                      </div>
+                      <span id="preco-step3-larger" class="preco"> +$2/mo</span>
+                    </div>
+                    <div class="conteudo-step-3">
+                      <div class="conteudo-step-3-meio">
+                        <div>
+                          <input onchange="checkBoxStep3()" class="checkbox-addons" type="checkbox">
+                        </div>
+                        <div>
+                          <label for=""> Customizable Profile</label>
+                          <p>Custom theme on your profile</p>
+                        </div>
+                      </div>
+                      <span id="preco-step3-online-custom" class="preco">+$2/mo</span>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+              <div class="parte3">
+                <button id="go-back" type="button">Go Back</button>
+                <button type="button">Next Step</button>
               </div>
             </div>
 
-            <!-- Step 1 end -->
+
+
+
+
+            <!-- Step 3 start -->
 
 
             <div style="display: none;">
-              <!-- Step 2 start -->
 
 
-             
-              
 
-              
-              
 
-              
-              
+
+
+
+
+
+
+
 
 
               <!-- Step 2 end -->
 
               <!-- Step 3 start -->
 
-              Pick add-ons
-              Add-ons help enhance your gaming experience.
 
-              Online service
-              Access to multiplayer games
-              +$1/mo
 
-              Larger storage
-              Extra 1TB of cloud save
-              +$2/mo
 
-              Customizable Profile
-              Custom theme on your profile
-              +$2/mo
+
+             
 
               Go Back
               Next Step
