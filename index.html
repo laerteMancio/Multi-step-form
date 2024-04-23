@@ -74,18 +74,16 @@
         <div class="direita">
           <div class="conteudo-direita">
 
-
-
             <div class="step1">
               <div class="step-conteudo">
 
                 <!-- Step 1 start -->
-                <div id="step1-header" class="parte1 sumir-display">
+                <div id="step1-header" class="parte1 ">
                   <h1>Personal info</h1>
                   <p>Please provide your name, email address, and phone number.</p>
                 </div>
 
-                <div id="step1-content" class="parte2 sumir-display">
+                <div id="step1-content" class="parte2 ">
                   <form class="form1" action="">
                     <label for="">Name</label>
                     <input type="text" placeholder="e.g. Stephen King">
@@ -154,12 +152,12 @@
 
                 <!-- Step 3 start -->
 
-                <div id="step1-header" class="parte1 sumir-display">
+                <div id="step3-header" class="parte1 sumir-display">
                   <h1> Pick add-ons</h1>
                   <p>Add-ons help enhance your gaming experience.</p>
                 </div>
 
-                <div id="step1-content" class="parte2 sumir-display">
+                <div id="step3-content" class="parte2 sumir-display">
 
                   <div class="container-step-3">
                     <div class="conteudo-step-3">
@@ -210,15 +208,12 @@
 
                 <!-- Step 4 start -->
 
-                <div id="step1-header" class="parte1 sumir-display">
+                <div id="step4-header" class="parte1 sumir-display">
                   <h1>Finishing up</h1>
                   <p>Double-check everything looks OK before confirming.</p>
                 </div>
 
-
-
-
-                <div id="step1-content" class="parte2 sumir-display">
+                <div id="step4-content" class="parte2 sumir-display">
 
                   <div class="container-step-4">
 
@@ -264,23 +259,22 @@
 
                 <!-- Step 5 start -->
 
-                <div id="step1-content" class="parte2">
+                <div>
+                  <div id="step5-header" class="parte1 sumir-display">
 
-                  <div class="container-step-5">
-                    
-                      <img src="./assets/images/icon-thank-you.svg" alt="">
-
-                      <h1>Thank you!</h1>
-
-                      <p>Thanks for confirming your subscription! We hope you have fun
-                        using our platform. If you ever need support, please feel free
-                        to email us at support@loremgaming.com.</p>
-
-                    
-
-
+                    <div class="container-step-5">
+                      
+                        <img src="./assets/images/icon-thank-you.svg" alt="">
+  
+                        <h1>Thank you!</h1>
+  
+                        <p>Thanks for confirming your subscription! We hope you have fun
+                          using our platform. If you ever need support, please feel free
+                          to email us at support@loremgaming.com.</p>
+  
+                    </div>
+                   
                   </div>
-                 
                 </div>
 
                 <!-- Step 5 end -->
@@ -291,30 +285,11 @@
               </div>
 
               <div class="parte3">
-                <button id="go-back" type="button">Go Back</button>
-                <button type="button">Next Step</button>
+                <button class="btn-parte3" onclick="backStep()" id="go-back" type="button">Go Back</button>
+                <button class="btn-parte3" onclick="nextStep()" type="button">Next Step</button>
+                <button class="btn-parte3 sumir-display" onclick="nextStep()" type="button">Confirm</button>
               </div>
             </div>
-
-
-
-
-
-
-
-
-            <div style="display: none;">
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
 
@@ -324,12 +299,13 @@
 
 
       </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Laerte Mancio</a>.
+      </div>
     </div>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    
   </div>
 
 
